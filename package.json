@@ -1,0 +1,15 @@
+{
+  "name": "mswjs-interceptors-tls-passthrough-race",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Minimal reproduction: @mswjs/interceptors passes TLS connections through to the real host when the client's first write lands after one setImmediate",
+  "engines": { "node": ">=24" },
+  "scripts": {
+    "start": "node run.mjs",
+    "repro": "npm start"
+  },
+  "dependencies": {
+    "@mswjs/interceptors": "0.45.9"
+  }
+}
